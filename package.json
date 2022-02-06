@@ -1,9 +1,12 @@
 {
+  "homepage": "https://andrew-korsten.github.io/rest-api-template",
   "name": "2.-simple-rest-api",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "devStart": "nodemon server.js"
   },
   "author": "",
@@ -15,6 +18,7 @@
   },
   "devDependencies": {
     "dotenv": "^14.3.0",
+    "gh-pages": "^3.2.3",
     "nodemon": "^2.0.15"
   }
 }
