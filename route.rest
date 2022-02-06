@@ -1,0 +1,39 @@
+
+// C5.4. Create the get request by quering "http://localhost:3000/subscribers", and then sedn the "send request" button in order to send a req (C5.5 is in subscribers.js)
+GET http://localhost:3000/subscribers
+
+// C5.6 Create the divider by "###"
+
+###
+
+// C5.7 Create the get-one test request - http://localhost:3000/subscribers/115
+GET http://localhost:3000/subscribers/61fed80ac935aae30d9eb2d7
+
+###
+
+// F7. Create the POST req to subscribers + leave the blank line, place JSON on the next line + "Content-Type: application/json"
+// F8. Check the receipt - ss - https://i.imgur.com/Ur9n6wo.png
+// F9. Delete the name and check the error and response
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name": "Amazing Person",
+    "subscribedToChannel": "Web Dev Simplified"
+}
+
+###
+
+// I5. Test delete - DELETE http://localhost:3000/subscribers/61fed87dc935aae30d9eb2da
+
+DELETE http://localhost:3000/subscribers/61fed87dc935aae30d9eb2da
+
+###
+
+// j6. patch - https://i.imgur.com/QPRl8WJ.png
+PATCH http://localhost:3000/subscribers/61fef394953350a9c92a1e91
+Content-Type: application/json
+
+{
+    "name": "Michael"
+}
