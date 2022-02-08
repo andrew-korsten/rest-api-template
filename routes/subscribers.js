@@ -14,6 +14,7 @@ const Subscriber = require('../models/subscriber')
 // C4. Create the routes shell - see the ps - https://i.imgur.com/xJJ99rp.png
 
 // C4.1 getting all
+
 router.get('/', async (req, res) => {
     // E2. speify the funct as async
     // E3. Find and return all the subscribers - in try
@@ -28,6 +29,7 @@ router.get('/', async (req, res) => {
 })
 
 // C4.2. Getting one 
+
 // H1. specify the middleware before the function
 router.get('/:id', getSubscriber, (req, res) => {
     // C5.5 Create a test in get-onr (C5.6 is in router.rest)

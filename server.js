@@ -7,6 +7,18 @@ const app = express();
 // B4. Create the mongoose
 const mongoose = require('mongoose');
 
+// CORS-1. In server.js, require the cors
+const cors = require('cors')
+
+// CORS-2. Specify the * for domain 
+app.use(
+    cors({
+        origin: "*",
+    })
+)
+
+
+
 const config = require('config');
 
 const dbConfig = config.get('Andy.dbConfig.dbName');
